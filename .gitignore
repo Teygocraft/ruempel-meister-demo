@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.log
+npm-debug.log*
+
+# Dev-only scripts
+fetch_images.js
+get_images.js
+server.js
+
+# Skill folder (not needed for deployment)
+ui-ux-pro-max-skill-main/

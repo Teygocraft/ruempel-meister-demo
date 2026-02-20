@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-bind="businessName">Master Website Template</title>
+    <link rel="icon" type="image/png"
+        href="https://ruempelmeister.de/wordpress/wp-content/uploads/2020/12/ruempel-meister-logo.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo"
+                style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: inherit;">
+                <img src="https://ruempelmeister.de/wordpress/wp-content/uploads/2020/12/ruempel-meister-logo.png"
+                    alt="Logo" style="height: 58px; width: auto;">
+                <span class="logo-text"
+                    style="font-size: 1.35rem; font-weight: 800; color: var(--text-main); letter-spacing: -0.02em;"
+                    data-bind="businessName">Rümpel
+                    Meister Berlin</span>
+            </a>
+            <div id="navActions" class="nav-actions">
+                <button id="btn-back-landing" class="btn btn-secondary"
+                    style="display: none; padding: 0.5rem 1rem; font-size: 0.95rem; gap: 0.5rem;"
+                    onclick="showLandingView()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15 18-6-6 6-6" />
+                    </svg>
+                    Standort wechseln
+                </button>
+                <a href="tel:0800808090333" id="nav-phone-btn" class="nav-phone"
+                    style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-weight: 600; color: var(--text-main); transition: color 0.2s ease;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <span data-bind="phoneNumber">0800 8080 90333</span>
+                </a>
+                <a href="#booking" id="nav-booking-btn" class="btn btn-primary" style="padding: 0.75rem 1.5rem;"
+                    onclick="toggleMenu()">Direktangebot</a>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu-btn" onclick="toggleMenu()"
+                aria-label="Menu öffnen/schließen">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Global Landing Page View -->
+    <div id="landing-view">
+        <section class="landing-hero"
+            style="background: linear-gradient(rgba(248, 250, 252, 0.5), rgba(248, 250, 252, 0.8)), url('https://ruempelmeister.de/wordpress/wp-content/uploads/2020/12/ruempel-meister-im-einsatz.jpg') center/cover; padding-top: 10rem; padding-bottom: 6rem; text-align: center; min-height: 100vh;">
+            <div class="container">
+                <span class="tagline">Bundesweite Experten</span>
+                <h1 style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 1.5rem; letter-spacing: -0.03em;">Wir
+                    räumen auf.<br><span style="color: var(--primary);">In Ihrer Stadt.</span></h1>
+                <p style="font-size: 1.25rem; font-weight: 500; max-width: 600px; margin: 0 auto 4rem; color: #1e293b;">
+                    Wählen Sie Ihren Standort für ein maßgeschneidertes, besenreines und stressfreies Festpreis-Angebot.
+                </p>
+                <div class="city-grid" id="landing-city-grid">
+                    <!-- Cards will be populated dynamically via JS -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- City Specific View -->
+    <div id="city-view" style="display: none;">
+
+        <!-- Hero Section -->
+        <section id="hero-section" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="tagline" data-bind="tagline">Your Tagline Here</span>
+                    <h1 data-bind="heroHeadline">Main Headline for the Local Business</h1>
+                    <p data-bind="heroSubheadline">Subheadline text explaining exactly what the business does and why
+                        customers should care immediately.</p>
+
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-secondary">Über uns</a>
+                        <a href="#services" class="btn btn-secondary">Unsere Leistungen</a>
+                        <a href="#booking" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+
+                    <div class="trust-banner">
+                        <div class="trust-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
+                                stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg>
+                            <span data-bind="reviewsCount">5.0</span> Stars on Google
+                        </div>
+                        <div class="trust-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                            Licensed & Insured
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section (Dynamic Deep Crawled Content) -->
+        <section id="about" class="container" style="padding-bottom: 6rem; padding-top: 2rem;">
+            <div class="about-grid">
+                <!-- Left Image -->
+                <div class="about-image white-filter">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=800&q=80"
+                        alt="Entrümpelung Team bei der Arbeit">
+                </div>
+
+                <!-- Center Text Area -->
+                <div
+                    style="background: var(--bg-surface); padding: 3.5rem 2.5rem; border-radius: 24px; box-shadow: var(--shadow-sm); text-align: center;">
+                    <h2 data-bind="aboutHeadline" style="margin-bottom: 1.5rem;">Unsere Geschichte</h2>
+                    <p data-bind="aboutText" style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem;">
+                        <!-- Deep scraped minimalist summary goes here -->
+                        Wir sind ein lokales Unternehmen...
+                    </p>
+                </div>
+
+                <!-- Right Image -->
+                <div class="about-image white-filter">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Sorgfältige Arbeit">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Unsere professionellen Leistungen</h2>
+                    <p>Wir bieten umfassende Lösungen, die genau auf Ihr Anliegen zugeschnitten sind – für maximale
+                        Zufriedenheit und schnelle Abwicklung.</p>
+                </div>
+
+                <div class="services-grid" id="services-grid">
+                    <!-- Injected dynamically from siteconfig.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Split Section -->
+        <section class="container split-section" style="padding-bottom: 8rem;">
+            <div class="feature-image">
+                <!-- Background handled in CSS, perfectly fluid and floating -->
+            </div>
+            <div>
+                <h2>Warum Sie uns wählen sollten?</h2>
+                <p style="margin-top: 1.5rem; margin-bottom: 2rem;">Wenn Sie mit uns arbeiten, erhalten Sie
+                    jahrzehntelange
+                    kombinierte Erfahrung, transparente Kommunikation und garantierte Ergebnisse.</p>
+
+                <ul class="feature-list" id="feature-list">
+                    <!-- Injected dynamically from siteconfig.js -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Direct Booking Form Section -->
+        <section id="booking" class="container"
+            style="padding-bottom: 8rem; padding-top: 4rem; scroll-margin-top: 5rem;">
+            <div class="section-header">
+                <h2>Kostenloses Direktangebot</h2>
+                <p>Hinterlassen Sie uns die wichtigsten Details zu Ihrem Objekt – wir melden uns umgehend mit einem
+                    Festpreis-Angebot.</p>
+            </div>
+            <form id="contact-form"
+                style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem; background: var(--bg-surface); padding: 3rem; border-radius: 16px; box-shadow: var(--shadow-md); border: 1px solid rgba(0,0,0,0.02);">
+
+                <!-- 1. Contact Information -->
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <h3
+                        style="font-size: 1.2rem; color: var(--primary); border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem;">
+                        1. Kontaktdaten</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Vorname und Nachname</label>
+                            <input type="text" id="name" name="name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="street" class="form-label">Straße und Hausnummer</label>
+                            <input type="text" id="street" name="street" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="form-label">PLZ / Ort</label>
+                            <input type="text" id="city" name="city" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefon (Für Rückfragen)</label>
+                            <input type="tel" id="phone" name="phone" required class="form-input">
+                        </div>
+                        <div class="form-group" style="grid-column: span 2;">
+                            <label for="email" class="form-label">E-Mail-Adresse</label>
+                            <input type="email" id="email" name="email" required class="form-input">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Property Details -->
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <h3
+                        style="font-size: 1.2rem; color: var(--primary); border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem;">
+                        2. Angaben zum Objekt</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label for="objektart" class="form-label">Objektart</label>
+                            <select id="objektart" name="objektart" class="form-input" style="appearance: auto;">
+                                <option value="Wohnung">Wohnung</option>
+                                <option value="Haus">Haus</option>
+                                <option value="Keller">Keller / Dachboden</option>
+                                <option value="Gewerbe">Gewerbe / Büro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="etage" class="form-label">Etage</label>
+                            <input type="text" id="etage" name="etage" class="form-input" placeholder="z.B. 2. OG">
+                        </div>
+                        <div class="form-group">
+                            <label for="aufzug" class="form-label">Aufzug vorhanden?</label>
+                            <select id="aufzug" name="aufzug" class="form-input" style="appearance: auto;">
+                                <option value="ja">Ja</option>
+                                <option value="nein">Nein</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="parkplatz" class="form-label">Parkmöglichkeiten</label>
+                            <select id="parkplatz" name="parkplatz" class="form-input" style="appearance: auto;">
+                                <option value="gut">Gut (direkt vor der Tür)</option>
+                                <option value="mittel">Mittel (in der Straße)</option>
+                                <option value="schlecht">Schlecht / Eingeschränkt</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Services & Date -->
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <h3
+                        style="font-size: 1.2rem; color: var(--primary); border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem;">
+                        3. Wunschtermin & Details</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label for="date" class="form-label">Wunschtermin</label>
+                            <input type="date" id="date" name="date" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Gewünschte Hauptleistung</label>
+                            <select id="leistung" name="leistung" class="form-input" style="appearance: auto;">
+                                <option value="wohnungsaufloesung">Wohnungs- / Haushaltsauflösung</option>
+                                <option value="entruempelung">Entrümpelung inkl. Entsorgung</option>
+                                <option value="messie">Spezialräumung (Messie)</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="grid-column: span 2;">
+                            <label for="message" class="form-label">Kurzbeschreibung (Optional)</label>
+                            <textarea id="message" name="message" rows="3" class="form-input"
+                                placeholder="Gibt es Besonderheiten? Was genau muss geräumt werden?"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary"
+                    style="margin-top: 1rem; font-size: 1.1rem; padding: 1rem;">Unverbindliches Festpreis-Angebot
+                    anfordern</button>
+            </form>
+        </section>
+        <!-- Local SEO Section -->
+        <section id="local-seo" class="container" style="padding-bottom: 6rem; padding-top: 2rem;">
+            <div
+                style="background: var(--secondary); padding: 4rem 3rem; border-radius: 24px; text-align: center; border: 1px solid rgba(0,0,0,0.03);">
+                <h2 id="local-headline"
+                    style="font-size: 2.2rem; color: var(--text-main); margin-bottom: 1.5rem; font-weight: 800; letter-spacing: -0.03em;">
+                    Professionelle Entrümpelung für Berlin & Umgebung</h2>
+                <p id="local-text"
+                    style="font-size: 1.15rem; max-width: 800px; margin: 0 auto; color: #475569; line-height: 1.8;">Wir
+                    sind
+                    täglich in ganz Berlin und den angrenzenden Bezirken für Sie unterwegs. Ob Charlottenburg, Mitte,
+                    Spandau oder Köpenick – unser lokales Team ist schnell vor Ort und rümpelt Ihr Objekt besenrein.</p>
+            </div>
+        </section>
+
+    </div> <!-- End of City View -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4 data-bind="businessName">Business Name</h4>
+                    <p data-bind="tagline">Tagline goes here.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontaktieren Sie uns</h4>
+                    <p data-bind="address">123 Street Address</p>
+                    <p data-bind="phoneNumber">Phone Number</p>
+                    <p data-bind="emailAddress">Email Address</p>
+                </div>
+                <div class="footer-col" id="footer-opening-hours">
+                    <h4>Öffnungszeiten</h4>
+                    <p>Mo-Fr: 08:00 - 18:00 Uhr</p>
+                    <p>Sa: 09:00 - 14:00 Uhr</p>
+                    <p>So: Geschlossen</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <p><a href="impressum.html" style="color: inherit; text-decoration: none;">Impressum</a></p>
+                    <p><a href="agb.html" style="color: inherit; text-decoration: none;">AGB</a></p>
+                    <p><a href="datenschutz.html" style="color: inherit; text-decoration: none;">Datenschutz</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-bind="businessName"></span>. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Configuration Script -->
+    <script src="siteconfig.js"></script>
+    <script>
+        // Handle form submission and send to local server
+        document.getElementById('contact-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('http://localhost:3000/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    alert('Ihre Nachricht wurde erfolgreich gesendet (Ans Terminal geschickt)!');
+                    e.target.reset();
+                } else {
+                    alert('Fehler beim Senden der Nachricht. Läuft der lokale Server?');
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                alert('Netzwerkfehler. Bitte stellen Sie sicher, dass der Server (node server.js) läuft.');
+            }
+        });
+    </script>
+</body>
+
+</html>
