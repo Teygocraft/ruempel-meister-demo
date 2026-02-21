@@ -177,7 +177,7 @@ function applyConfig() {
 
     // ── 3. Favicon ───────────────────────────────────────────────
     const favicon = document.getElementById('site-favicon');
-    if (favicon) favicon.href = siteConfig.faviconUrl;
+    if (favicon && siteConfig.faviconUrl) favicon.href = siteConfig.faviconUrl;
 
     // ── 4. Telefon-Link (href) ───────────────────────────────────
     const phoneHref = document.getElementById('nav-phone-href');

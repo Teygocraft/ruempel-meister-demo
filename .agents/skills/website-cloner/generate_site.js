@@ -162,7 +162,7 @@ function applyConfigFunctionCode() {
     if (logoImg) { logoImg.src = siteConfig.logoUrl; logoImg.alt = siteConfig.logoAlt || siteConfig.businessName; }
 
     const favicon = document.getElementById('site-favicon');
-    if (favicon) favicon.href = siteConfig.faviconUrl;
+    if (favicon && siteConfig.faviconUrl) favicon.href = siteConfig.faviconUrl;
 
     const phoneHref = document.getElementById('nav-phone-href');
     if (phoneHref) phoneHref.href = 'tel:' + siteConfig.phoneNumberRaw;
