@@ -404,10 +404,10 @@ footer {
 /* About Us Section with Images */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -692,14 +692,15 @@ textarea.form-input {
     color: var(--text-main);
     padding: 1rem 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
     gap: 0.75rem;
     z-index: 9999;
     transform: translateY(150%);
     opacity: 0;
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Bouncy float in */
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Bouncy float in */
     pointer-events: none;
 }
 
@@ -728,7 +729,8 @@ textarea.form-input {
     .toast-notification {
         bottom: 1.5rem;
         right: 1.5rem;
-        left: 1.5rem; /* Full width on mobile minus padding */
+        left: 1.5rem;
+        /* Full width on mobile minus padding */
         justify-content: center;
     }
 }
