@@ -347,7 +347,7 @@
                 <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
         </div>
-        <div class="toast-content" id="toast-message">Ihre Anfrage wurde erfolgreich gesendet!</div>
+        <div class="toast-content" id="toast-message">Dankeschön! Ihre Anfrage wurde erfolgreich gesendet.</div>
     </div>
 
     <!-- App Configuration Script -->
@@ -373,7 +373,7 @@
                 if (response.ok) {
                     const toast = document.getElementById('form-toast');
                     const toastMsg = document.getElementById('toast-message');
-                    toastMsg.textContent = 'Ihre Anfrage wurde erfolgreich gesendet!';
+                    toastMsg.textContent = 'Dankeschön! Ihre Anfrage wurde erfolgreich gesendet.';
                     toast.classList.add('show');
 
                     setTimeout(() => {
