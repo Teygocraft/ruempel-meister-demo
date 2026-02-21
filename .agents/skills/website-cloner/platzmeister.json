@@ -1,0 +1,64 @@
+{
+    "businessName": "Platzmeister",
+    "tagline": "Haushaltsauflösung & Entrümpelung in Baden-Württemberg.",
+    "logoUrl": "https://74c63f74.delivery.rocketcdn.me/wp-content/uploads/Logo-Platzmeister.svg",
+    "logoAlt": "Platzmeister Logo",
+    "faviconUrl": "https://74c63f74.delivery.rocketcdn.me/wp-content/uploads/Logo-Platzmeister.svg",
+    "primaryColor": "#0ea5e9",
+    "secondaryColor": "#f0f9ff",
+    "accentColor": "#f59e0b",
+    "phoneNumber": "0173 8999 933",
+    "phoneNumberRaw": "01738999933",
+    "emailAddress": "info@platz-meister.de",
+    "address": "Stuttgart & Baden-Württemberg",
+    "openingHoursMoFr": "Mo-Fr: 08:00 - 18:00 Uhr",
+    "openingHoursSat": "Sa: Nach Vereinbarung",
+    "openingHoursSun": "So: Geschlossen",
+    "landingHeroImage": "url('https://74c63f74.delivery.rocketcdn.me/wp-content/uploads/Entruemplung-eines-Hauses-768x512.webp')",
+    "landingTagline": "Baden-Württemberg & bundesweit",
+    "landingHeadline": "Platz für Neues.<br><span style='color: var(--primary);'>Wir räumen auf.</span>",
+    "landingSubheadline": "Professionelle Haushaltsauflösungen & Entrümpelungen in Stuttgart und ganz Baden-Württemberg – transparent, schnell und zum Festpreis.",
+    "reviewsCount": "+150",
+    "aboutHeadline": "Ihr Experte für Haushaltsauflösungen in BW",
+    "aboutText": "Platzmeister ist Ihr professioneller Partner für Haushaltsauflösungen und Entrümpelungen in Stuttgart und ganz Baden-Württemberg. Unser erfahrenes Team besteht aus Haushaltsauflösungsspezialisten, die sich mit Respekt und Empathie um Ihre Situation kümmern – ob Umzug, Nachlass oder andere Lebensveränderungen. Wir gehen sorgsam vor und legen großen Wert auf Nachhaltigkeit und Recycling.",
+    "services": [
+        {
+            "title": "Haushaltsauflösung",
+            "description": "Umfassende Räumung von Wohnungen und Häusern mit Sortierung, Wertanrechnung und besenreiner Übergabe."
+        },
+        {
+            "title": "Entrümpelung",
+            "description": "Schnelle Entrümpelung von Keller, Dachboden, Garage und Büro – Festpreis inklusive Entsorgung."
+        },
+        {
+            "title": "Grundreinigung",
+            "description": "Optionale professionelle Grundreinigung nach der Entrümpelung für eine einwandfreie Übergabe."
+        }
+    ],
+    "features": [
+        "Kostenlose Beratung & Besichtigung",
+        "Wertanrechnung möglich (Wert wird verrechnet)",
+        "Besenreine Übergabe – inkl. Lampen & Nägel",
+        "Kurzfristige Terminvereinbarung (innerhalb 48h)"
+    ],
+    "locationData": {
+        "stuttgart": {
+            "businessName": "Platzmeister Stuttgart",
+            "heroHeadline": "Haushaltsauflösung & Entrümpelung in Stuttgart",
+            "heroSubheadline": "Ihr Experte in Stuttgart und der gesamten Region – transparent, schnell und mit Festpreisgarantie.",
+            "heroImage": "url('https://images.unsplash.com/photo-1467533003447-e295ff1b0435?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://74c63f74.delivery.rocketcdn.me/wp-content/uploads/Entruemplung-eines-Hauses-768x512.webp')",
+            "seoHeadline": "Professionelle Haushaltsauflösung in Stuttgart & Umgebung",
+            "seoText": "Platzmeister ist Ihr lokaler Partner für Entrümpelungen in Stuttgart, Ludwigsburg, Esslingen, Böblingen und der gesamten Region. Wir kommen zu Ihnen, besichtigen kostenlos und erstellen ein verbindliches Festpreisangebot."
+        },
+        "karlsruhe": {
+            "businessName": "Platzmeister Karlsruhe",
+            "heroHeadline": "Haushaltsauflösung & Entrümpelung in Karlsruhe",
+            "heroSubheadline": "Professionelle Räumung in Karlsruhe und der Technologieregion – Festpreis, Wertanrechnung, besenrein.",
+            "heroImage": "url('https://images.unsplash.com/photo-1548199569-a50e05d49cb0?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://74c63f74.delivery.rocketcdn.me/wp-content/uploads/Entruemplung-eines-Hauses-768x512.webp')",
+            "seoHeadline": "Professionelle Haushaltsauflösung in Karlsruhe & Umgebung",
+            "seoText": "Platzmeister ist Ihr kompetenter Entrümpelungspartner in Karlsruhe, Rastatt, Baden-Baden und der Technologieregion. Schnell, diskret und zum transparenten Festpreis."
+        }
+    }
+}

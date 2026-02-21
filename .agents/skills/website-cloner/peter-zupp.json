@@ -1,0 +1,64 @@
+{
+    "businessName": "Peter Zupp GmbH",
+    "tagline": "Deutsches Familienunternehmen seit über 30 Jahren.",
+    "logoUrl": "https://www.peter-zupp.de/wp-content/themes/peter-zupp.de/assets/images/peter-zupp-logo.gif",
+    "logoAlt": "Peter Zupp GmbH Logo",
+    "faviconUrl": "https://www.peter-zupp.de/wp-content/themes/peter-zupp.de/assets/images/peter-zupp-logo.gif",
+    "primaryColor": "#dc2626",
+    "secondaryColor": "#fef2f2",
+    "accentColor": "#f59e0b",
+    "phoneNumber": "0201 28 96 691",
+    "phoneNumberRaw": "020128966991",
+    "emailAddress": "kontakt@peter-zupp.de",
+    "address": "Schalker Str. 64, 45327 Essen",
+    "openingHoursMoFr": "Mo-Sa: 08:00 - 20:00 Uhr",
+    "openingHoursSat": "Sa: 08:00 - 20:00 Uhr",
+    "openingHoursSun": "So: Geschlossen",
+    "landingHeroImage": "url('https://images.unsplash.com/photo-1543539748-16b665b4a9e1?auto=format&fit=crop&w=1920&q=80')",
+    "landingTagline": "NRW-weit im Einsatz",
+    "landingHeadline": "Entrümpelung & Räumung.<br><span style='color: var(--primary);'>Seit 30 Jahren.</span>",
+    "landingSubheadline": "Professionelle Entrümpelung, Haushaltsauflösung und Räumung in ganz NRW – Familienunternehmen mit 4,9 Sternen bei 443 Google-Bewertungen.",
+    "reviewsCount": "+443",
+    "aboutHeadline": "30 Jahre Erfahrung – Familie Zupp",
+    "aboutText": "Die Peter Zupp GmbH ist ein deutsches Familienunternehmen mit über 30 Jahren Erfahrung in der Entrümpelung, Haushaltsauflösung und Räumung in ganz NRW. André und Alexander Zupp leiten das Unternehmen mit einem eingespielten Team von 12 langjährigen Mitarbeitern. Gerichtliche Nachlassverwalter und Hausverwaltungen in ganz NRW vertrauen seit Jahrzehnten auf die Zuverlässigkeit und Diskretion von Peter Zupp. 4,9 Sterne auf Google aus 443 Bewertungen sprechen für sich.",
+    "services": [
+        {
+            "title": "Haushaltsauflösung",
+            "description": "Komplette Wohnungsräumung mit besenreiner Übergabe – in 24 Stunden erledigt."
+        },
+        {
+            "title": "Gerichtliche Räumung",
+            "description": "Zuverlässige Räumung für Behörden, Hausverwaltungen und Nachlassverwalter in ganz NRW."
+        },
+        {
+            "title": "Firmenauflösung",
+            "description": "Professionelle Büro- und Betriebsauflösungen inkl. Aktenvernichtung und Entsorgung."
+        }
+    ],
+    "features": [
+        "Kostenlose Besichtigung & Festpreisangebot",
+        "Besenreine Übergabe in nur 24 Stunden",
+        "Kostenlose Anfahrt in ganz NRW",
+        "Faire Wertanrechnung für verwertbare Gegenstände"
+    ],
+    "locationData": {
+        "essen": {
+            "businessName": "Peter Zupp GmbH Essen",
+            "heroHeadline": "Entrümpelung & Räumung in Essen",
+            "heroSubheadline": "Ihr Familienunternehmen mit über 30 Jahren Erfahrung – schnell, diskret und zum Festpreis. Besenrein in 24 Stunden.",
+            "heroImage": "url('https://images.unsplash.com/photo-1543539748-16b665b4a9e1?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung in Essen & dem Ruhrgebiet",
+            "seoText": "Peter Zupp GmbH (Schalker Str. 64, 45327 Essen) ist Ihr zuverlässiger Partner im gesamten Ruhrgebiet. Wir sind täglich in Essen, Bochum, Duisburg, Gelsenkirchen und der gesamten Region im Einsatz."
+        },
+        "duisburg": {
+            "businessName": "Peter Zupp GmbH Duisburg",
+            "heroHeadline": "Entrümpelung & Räumung in Duisburg",
+            "heroSubheadline": "Ihr Familienunternehmen mit über 30 Jahren Erfahrung – kostenlose Anfahrt in NRW, besenrein in 24 Stunden.",
+            "heroImage": "url('https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung in Duisburg & Umgebung",
+            "seoText": "Von Rheinhausen bis Meiderich, von Homberg bis Marxloh: Peter Zupp GmbH entrümpelt das gesamte Duisburger Stadtgebiet und alle umliegenden Ortschaften – schnell, zuverlässig und zum Festpreis."
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "businessName": "Deutsche Entrümpelungskonzepte",
+    "tagline": "Schnell. Stressfrei. Zum Bestpreis.",
+    "logoUrl": "https://deutsche-entruempelungskonzepte.de/wp-content/uploads/2024/02/DEK-Zentrum-900-x-500-px-1.webp",
+    "logoAlt": "DEK Entrümpelung Logo",
+    "faviconUrl": "https://deutsche-entruempelungskonzepte.de/wp-content/uploads/2024/02/DEK-Zentrum-900-x-500-px-1.webp",
+    "primaryColor": "#16a34a",
+    "secondaryColor": "#f0fdf4",
+    "accentColor": "#f59e0b",
+    "phoneNumber": "0170 50 999 22",
+    "phoneNumberRaw": "01705099922",
+    "emailAddress": "info@deutsche-entruempelungskonzepte.de",
+    "address": "Deutschlandweit – über 200 Standorte",
+    "openingHoursMoFr": "Mo-Fr: 24/7 Hotline",
+    "openingHoursSat": "Sa: 24/7 Hotline",
+    "openingHoursSun": "So: 24/7 Hotline",
+    "landingHeroImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1920&q=80')",
+    "landingTagline": "Über 200 Standorte deutschlandweit",
+    "landingHeadline": "Wir entrümpeln.<br><span style='color: var(--primary);'>In Ihrer Stadt.</span>",
+    "landingSubheadline": "Bestpreisgarantie: Wir unterbieten jeden Konkurrenten um 10%. Kostenlose Besichtigung, Festpreis, besenreine Übergabe.",
+    "reviewsCount": "+200",
+    "aboutHeadline": "Ihr Partner mit über 10 Jahren Erfahrung",
+    "aboutText": "Deutsche Entrümpelungskonzepte (DEK) ist seit über 10 Jahren Ihr zuverlässiger Partner für professionelle Entrümpelungen in ganz Deutschland. Mit über 200 lokalen Standorten sind wir immer in Ihrer Nähe. Unser persönlicher Berater Paul Gallas begleitet Sie von der ersten Anfrage bis zur besenreinen Übergabe. Bei uns sprechen Sie nicht mit einem Callcenter, sondern direkt mit einem Experten.",
+    "services": [
+        {
+            "title": "Wohnungsentrümpelung",
+            "description": "Komplette Räumung von Wohnungen bis 100 m² – inkl. Entsorgung, ab 870 €."
+        },
+        {
+            "title": "Keller & Dachboden",
+            "description": "Schnelle Entsorgung von Altlasten in Keller, Dachboden und Garage ab 260 €."
+        },
+        {
+            "title": "Messie-Wohnungen",
+            "description": "Einfühlsame und professionelle Räumung von Messie-Wohnungen – diskret & schnell."
+        }
+    ],
+    "features": [
+        "Bestpreisgarantie – 10% günstiger als jedes Angebot",
+        "100% Festpreis – keine versteckten Kosten",
+        "Kostenlose Vor-Ort-Besichtigung",
+        "Kurzfristige Termine – oft noch am selben Tag"
+    ],
+    "locationData": {
+        "berlin": {
+            "businessName": "DEK Entrümpelung Berlin",
+            "heroHeadline": "Günstige Entrümpelung in Berlin",
+            "heroSubheadline": "Bestpreisgarantie: Wir unterbieten jeden Konkurrenten um 10%. Festpreis, kostenlose Besichtigung, besenreine Übergabe.",
+            "heroImage": "url('https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung Berlin zum Bestpreis",
+            "seoText": "Wir sind täglich in ganz Berlin und der gesamten Umgebung für Sie im Einsatz. Ob Mitte, Charlottenburg, Prenzlauer Berg oder Spandau – Ihr DEK-Team ist schnell vor Ort mit der 10%-Bestpreisgarantie."
+        },
+        "hamburg": {
+            "businessName": "DEK Entrümpelung Hamburg",
+            "heroHeadline": "Günstige Entrümpelung in Hamburg",
+            "heroSubheadline": "Bestpreisgarantie: Wir unterbieten jeden Konkurrenten um 10%. Festpreis, kostenlose Besichtigung, besenreine Übergabe.",
+            "heroImage": "url('https://images.unsplash.com/photo-1678026281235-e9725b0a1417?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung Hamburg zum Bestpreis",
+            "seoText": "Von Altona bis Wandsbek, von der HafenCity bis Harburg: Ihr DEK-Team entrümpelt schnell, diskret und zum garantierten Bestpreis in der gesamten Hansestadt."
+        },
+        "muenchen": {
+            "businessName": "DEK Entrümpelung München",
+            "heroHeadline": "Günstige Entrümpelung in München",
+            "heroSubheadline": "Bestpreisgarantie: Wir unterbieten jeden Konkurrenten um 10%. Festpreis, kostenlose Besichtigung, besenreine Übergabe.",
+            "heroImage": "url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung München zum Bestpreis",
+            "seoText": "Von Schwabing bis Pasing, von Maxvorstadt bis Bogenhausen: Ihr lokales DEK-Team ist schnell vor Ort. Mit der Bestpreisgarantie zahlen Sie nie zu viel."
+        }
+    }
+}

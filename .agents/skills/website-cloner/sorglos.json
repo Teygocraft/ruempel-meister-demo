@@ -1,0 +1,91 @@
+{
+    "businessName": "Sorglos Umzüge & Entrümpelungen",
+    "tagline": "5 Standorte. Ein Versprechen: Sorglos.",
+    "logoUrl": "https://sorglosumzuege.de/wp-content/uploads/2025/02/Logo_Sorglos_Corporate-Gruen.webp",
+    "logoAlt": "Sorglos Umzüge Logo",
+    "faviconUrl": "https://sorglosumzuege.de/wp-content/uploads/2025/02/Logo_Sorglos_Corporate-Gruen.webp",
+    "primaryColor": "#15803d",
+    "secondaryColor": "#f0fdf4",
+    "accentColor": "#f59e0b",
+    "phoneNumber": "0221 82828900",
+    "phoneNumberRaw": "022182828900",
+    "emailAddress": "info@sorglosumzuege.de",
+    "address": "Maarweg 143, 50825 Köln",
+    "openingHoursMoFr": "Mo-Fr: 08:30 - 19:00 Uhr",
+    "openingHoursSat": "Sa: Nach Vereinbarung",
+    "openingHoursSun": "So: Geschlossen",
+    "landingHeroImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1920&q=80')",
+    "landingTagline": "5 Standorte in Deutschland",
+    "landingHeadline": "Umzug & Entrümpelung.<br><span style='color: var(--primary);'>Sorglos erledigt.</span>",
+    "landingSubheadline": "Wählen Sie Ihren Standort – wir sind in Köln, Düsseldorf, Essen, Frankfurt und Hamburg für Sie da.",
+    "reviewsCount": "+528",
+    "aboutHeadline": "Ihr verlässlicher Partner in NRW, Hessen & Hamburg",
+    "aboutText": "Sorglos Umzüge & Entrümpelungen steht für professionellen, zuverlässigen Service rund um Umzüge, Entrümpelungen und Einlagerung. Mit 5 Standorten in Köln, Düsseldorf, Essen, Frankfurt am Main und Hamburg sind wir bundesweit für Sie im Einsatz. Über 528 Google-Bewertungen mit 5,0 Sternen belegen unsere Qualität.",
+    "services": [
+        {
+            "title": "Entrümpelung",
+            "description": "Professionelle Entrümpelung von Wohnungen, Häusern und Gewerbe – besenrein und zum Festpreis."
+        },
+        {
+            "title": "Umzüge",
+            "description": "Regionaler und überregionaler Umzugsservice mit eigenem Fuhrpark – pünktlich und zuverlässig."
+        },
+        {
+            "title": "Einlagerung",
+            "description": "Sichere Zwischenlagerung Ihres Mobiliars in unseren modernen Lagerräumen."
+        }
+    ],
+    "features": [
+        "Kostenlose & unverbindliche Beratung",
+        "5 Standorte – immer in Ihrer Nähe",
+        "Google-Bewertung: ⌀ 5,0 Sterne (528 Bewertungen)",
+        "Festpreisgarantie ohne versteckte Kosten"
+    ],
+    "locationData": {
+        "koeln": {
+            "businessName": "Sorglos Entrümpelung Köln",
+            "heroHeadline": "Entrümpelung & Umzug in Köln",
+            "heroSubheadline": "Ihr lokales Team in Köln – von der Innenstadt bis Porz, von Ehrenfeld bis Chorweiler. Kostenlos beraten lassen.",
+            "heroImage": "url('https://images.unsplash.com/photo-1577086664693-894d8405334a?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung in Köln & Umgebung",
+            "seoText": "Unser Kölner Standort (Maarweg 143, 50825 Köln, Tel. 0221 82828900) ist Ihr Ansprechpartner für alle Kölner Stadtteile. Von Innenstadt über Lindenthal, Ehrenfeld, Nippes bis Rodenkirchen – wir kommen zu Ihnen."
+        },
+        "duesseldorf": {
+            "businessName": "Sorglos Entrümpelung Düsseldorf",
+            "heroHeadline": "Entrümpelung & Umzug in Düsseldorf",
+            "heroSubheadline": "Ihr lokales Team in Düsseldorf und der gesamten Region. Neuss, Mönchengladbach, Solingen, Krefeld – wir sind da.",
+            "heroImage": "url('https://images.unsplash.com/photo-1559827291-72ee739d0d9a?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung in Düsseldorf & Umgebung",
+            "seoText": "Unser Düsseldorfer Standort (Kaiserstraße 5, 40479 Düsseldorf, Tel. 0211 41872600) bedient das gesamte Düsseldorfer Stadtgebiet sowie Neuss, Mönchengladbach, Solingen, Krefeld und Wuppertal."
+        },
+        "essen": {
+            "businessName": "Sorglos Entrümpelung Essen",
+            "heroHeadline": "Entrümpelung & Umzug in Essen",
+            "heroSubheadline": "Ihr lokales Team im Ruhrgebiet – von Essen bis Bochum, Oberhausen und Duisburg. Jetzt kostenlos beraten lassen.",
+            "heroImage": "url('https://images.unsplash.com/photo-1543539748-16b665b4a9e1?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung in Essen & dem Ruhrgebiet",
+            "seoText": "Unser Essener Standort (Grugaplatz 2–4, 45131 Essen, Tel. 0201 49869800) ist für das gesamte Ruhrgebiet tätig: Bochum, Gelsenkirchen, Oberhausen, Duisburg, Bottrop und Mülheim an der Ruhr."
+        },
+        "frankfurt": {
+            "businessName": "Sorglos Entrümpelung Frankfurt",
+            "heroHeadline": "Entrümpelung & Umzug in Frankfurt",
+            "heroSubheadline": "Ihr lokales Team in Frankfurt am Main und der Metropolregion – Darmstadt, Mainz, Wiesbaden und mehr.",
+            "heroImage": "url('https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung in Frankfurt & der Rhein-Main-Region",
+            "seoText": "Unser Frankfurter Standort (Schumannstr. 27, 60325 Frankfurt, Tel. 069 80883003) betreut die gesamte Metropolregion: Frankfurt, Darmstadt, Mainz, Wiesbaden und Bad Nauheim."
+        },
+        "hamburg": {
+            "businessName": "Sorglos Entrümpelung Hamburg",
+            "heroHeadline": "Entrümpelung & Umzug in Hamburg",
+            "heroSubheadline": "Ihr lokales Team in der Hansestadt – von Altona bis Wandsbek, von Elmshorn bis Buxtehude.",
+            "heroImage": "url('https://images.unsplash.com/photo-1678026281235-e9725b0a1417?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung in Hamburg & dem Hamburger Umland",
+            "seoText": "Unser Hamburger Standort (Mittelweg 144, 20148 Hamburg, Tel. 040 87709660) ist für das gesamte Hamburger Stadtgebiet und den Speckgürtel im Einsatz – von Bargteheide bis Buxtehude."
+        }
+    }
+}

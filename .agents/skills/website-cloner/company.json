@@ -1,0 +1,45 @@
+{
+    "businessName": "HIER: Firmenname",
+    "tagline": "HIER: Slogan, z.B. 'Schnell. Sauber. Günstig.'",
+    "logoUrl": "HIER: https://... (URL zum Logo-Bild)",
+    "logoAlt": "HIER: Logo von [Firmenname]",
+    "faviconUrl": "HIER: https://... (gleiche URL wie logoUrl)",
+    "primaryColor": "#2563eb",
+    "secondaryColor": "#eff6ff",
+    "accentColor": "#f59e0b",
+    "phoneNumber": "HIER: 030 123 456 78",
+    "phoneNumberRaw": "HIER: 03012345678",
+    "emailAddress": "HIER: info@firma.de",
+    "address": "HIER: Musterstraße 1, 10115 Berlin",
+    "openingHoursMoFr": "Mo-Fr: 08:00 - 18:00 Uhr",
+    "openingHoursSat": "Sa: 09:00 - 14:00 Uhr",
+    "openingHoursSun": "So: Geschlossen",
+    "landingHeroImage": "url('HIER: https://images.unsplash.com/...')",
+    "landingTagline": "HIER: Lokale Experten",
+    "landingHeadline": "HIER: Wir machen das.<br><span style='color: var(--primary);'>In Ihrer Stadt.</span>",
+    "landingSubheadline": "HIER: Kurze Beschreibung was die Firma tut.",
+    "reviewsCount": "+100",
+    "aboutHeadline": "HIER: Unsere Geschichte",
+    "aboutText": "HIER: 2-3 Sätze über die Firma. Wann gegründet? Was macht sie besonders?",
+    "services": [
+        {
+            "title": "HIER: Leistung 1",
+            "description": "HIER: Kurze Beschreibung"
+        },
+        {
+            "title": "HIER: Leistung 2",
+            "description": "HIER: Kurze Beschreibung"
+        },
+        {
+            "title": "HIER: Leistung 3",
+            "description": "HIER: Kurze Beschreibung"
+        }
+    ],
+    "features": [
+        "HIER: Vorteil 1",
+        "HIER: Vorteil 2",
+        "HIER: Vorteil 3",
+        "HIER: Vorteil 4"
+    ],
+    "locationData": {}
+}

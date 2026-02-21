@@ -1,0 +1,65 @@
+{
+    "_HINWEIS": "Dies ist ein vollständiges Beispiel für Rümpel Meister Berlin. Nutze es als Referenz.",
+    "businessName": "Rümpel Meister",
+    "tagline": "Ihre Sorgen, unser Job - besenrein.",
+    "logoUrl": "https://ruempelmeister.de/wordpress/wp-content/uploads/2020/12/ruempel-meister-logo.png",
+    "logoAlt": "Rümpel Meister Logo",
+    "faviconUrl": "https://ruempelmeister.de/wordpress/wp-content/uploads/2020/12/ruempel-meister-logo.png",
+    "primaryColor": "#2563eb",
+    "secondaryColor": "#eff6ff",
+    "accentColor": "#f59e0b",
+    "phoneNumber": "0800 8080 90333",
+    "phoneNumberRaw": "0800808090333",
+    "emailAddress": "kontakt@ruempelmeister-berlin.de",
+    "address": "Musterstraße 12, 10115 Berlin",
+    "openingHoursMoFr": "Mo-Fr: 08:00 - 18:00 Uhr",
+    "openingHoursSat": "Sa: 09:00 - 14:00 Uhr",
+    "openingHoursSun": "So: Geschlossen",
+    "landingHeroImage": "url('https://ruempelmeister.de/wordpress/wp-content/uploads/2020/12/ruempel-meister-im-einsatz.jpg')",
+    "landingTagline": "Bundesweite Experten",
+    "landingHeadline": "Wir räumen auf.<br><span style='color: var(--primary);'>In Ihrer Stadt.</span>",
+    "landingSubheadline": "Wählen Sie Ihren Standort für ein maßgeschneidertes, besenreines und stressfreies Festpreis-Angebot.",
+    "reviewsCount": "+200",
+    "aboutHeadline": "Unsere Geschichte – Aus Erfahrung gegründet",
+    "aboutText": "Rümpel Meister® wurde von Stefan Schinkel vor über zehn Jahren gegründet. Der Anstoß für die Gründung war die eigene Betroffenheit durch den Tod des Vaters und die Demenzerkrankung der Mutter. Als gelernter Sanitärinstallateur hat er am eigenen Leib erfahren, wie wichtig professionelle und einfühlsame Hilfe von Außenstehenden ist, wenn die Familie alleine nicht weiterkommt. Heute sind wir ein starkes, deutschlandweites Team, das mit Herz, Diskretion und höchsten Qualitätsstandards arbeitet.",
+    "services": [
+        {
+            "title": "Wohnungsauflösung",
+            "description": "Komplette Räumung und besenreine Übergabe von Wohnungen und Häusern."
+        },
+        {
+            "title": "Keller & Dachboden",
+            "description": "Schnelle Entsorgung von Altlasten in Kellern, Garagen und Dachböden."
+        },
+        {
+            "title": "Gewerbliche Räumung",
+            "description": "Professionelle Büro- und Betriebsauflösungen für Unternehmen."
+        }
+    ],
+    "features": [
+        "Kostenlose Vorab-Besichtigung",
+        "100% Festpreisgarantie",
+        "Fachgerechte & zertifizierte Entsorgung",
+        "Diskretes & schnelles Team"
+    ],
+    "locationData": {
+        "berlin": {
+            "businessName": "Rümpel Meister Berlin",
+            "heroHeadline": "Schnelle & diskrete Entrümpelungen in Berlin",
+            "heroSubheadline": "Top-bewerteter Räumungsservice. Wir kümmern uns um Wohnungsauflösungen, Kellerentrümpelungen und Sperrmüll – stressfrei und zum Festpreis.",
+            "heroImage": "url('https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung für Berlin & Umgebung",
+            "seoText": "Wir sind täglich in ganz Berlin und den angrenzenden Bezirken für Sie unterwegs. Ob Charlottenburg, Mitte, Spandau oder Köpenick – unser lokales Team ist schnell vor Ort."
+        },
+        "hamburg": {
+            "businessName": "Rümpel Meister Hamburg",
+            "heroHeadline": "Schnelle & diskrete Entrümpelungen in Hamburg",
+            "heroSubheadline": "Top-bewerteter Räumungsservice. Wir kümmern uns um Wohnungsauflösungen, Kellerentrümpelungen und Sperrmüll – stressfrei und zum Festpreis.",
+            "heroImage": "url('https://images.unsplash.com/photo-1678026281235-e9725b0a1417?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Entrümpelung für Hamburg & Umland",
+            "seoText": "Von Altona bis Wandsbek, von der HafenCity bis Harburg: Wir entrümpeln schnell und diskret in der gesamten Hansestadt."
+        }
+    }
+}

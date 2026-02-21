@@ -1,0 +1,73 @@
+{
+    "businessName": "Ratz Fatz Wohnungsauflösungen",
+    "tagline": "Schnell. Diskret. Bundesweit.",
+    "logoUrl": "https://www.ratz-fatz-wohnungsaufloesungen.de/wp-content/uploads/2015/01/ratz-fatz-wohnungsaufloesungen.png",
+    "logoAlt": "Ratz Fatz Wohnungsauflösungen Logo",
+    "faviconUrl": "https://www.ratz-fatz-wohnungsaufloesungen.de/wp-content/uploads/2015/01/ratz-fatz-wohnungsaufloesungen.png",
+    "primaryColor": "#7c3aed",
+    "secondaryColor": "#f5f3ff",
+    "accentColor": "#f59e0b",
+    "phoneNumber": "0911 / 23 69 160",
+    "phoneNumberRaw": "091123699160",
+    "emailAddress": "nuernberg@ratz-fatz-wohnungsaufloesungen.de",
+    "address": "Stralsunder Straße 52, 90425 Nürnberg",
+    "openingHoursMoFr": "Mo-Fr: 08:00 - 18:00 Uhr",
+    "openingHoursSat": "Sa: Nach Vereinbarung",
+    "openingHoursSun": "So: Geschlossen",
+    "landingHeroImage": "url('https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1920&q=80')",
+    "landingTagline": "20+ Standorte bundesweit",
+    "landingHeadline": "Wohnungsauflösung.<br><span style='color: var(--primary);'>Ratz Fatz erledigt.</span>",
+    "landingSubheadline": "Wählen Sie Ihren Standort – Ratz Fatz Wohnungsauflösungen ist mit über 20 lokalen Standorten in ganz Deutschland für Sie da.",
+    "reviewsCount": "+100",
+    "aboutHeadline": "Ihr lokaler Partner – bundesweit vernetzt",
+    "aboutText": "Ratz Fatz Wohnungsauflösungen® ist seit vielen Jahren Ihr zuverlässiger Partner für Haushaltsauflösungen, Entrümpelungen und Wohnungsauflösungen. Mit über 20 eigenständigen lokalen Standorten in ganz Deutschland garantieren wir bundesweit einheitlichen Standard in Sachen Professionalität, Freundlichkeit und Diskretion. Unser Ziel: Der lokale Dienstleister vor Ort als Ihr persönlicher Ansprechpartner.",
+    "services": [
+        {
+            "title": "Wohnungsauflösung",
+            "description": "Komplette Auflösung von Wohnungen und Häusern – mit Sortierung, Wertgegenstandsicherung und besenreiner Übergabe."
+        },
+        {
+            "title": "Betriebsauflösung",
+            "description": "Professionelle Auflösung von Büros, Betrieben, Fabriken und Hotels – diskret und termingerecht."
+        },
+        {
+            "title": "Messiewohnungen",
+            "description": "Einfühlsame Räumung von Messiewohnungen mit dem nötigen Respekt und Verständnis."
+        }
+    ],
+    "features": [
+        "Lokaler Dienstleister vor Ort – persönlicher Ansprechpartner",
+        "Kostenlose Besichtigung & unverbindliches Angebot",
+        "Faire Wertanrechnung – wir bewerten Gegenstände",
+        "Diskretion & Termintreue garantiert"
+    ],
+    "locationData": {
+        "nuernberg": {
+            "businessName": "Ratz Fatz Wohnungsauflösungen Nürnberg",
+            "heroHeadline": "Wohnungsauflösung in Nürnberg",
+            "heroSubheadline": "Ihr lokaler Experte in Nürnberg, Fürth, Erlangen und der gesamten Metropolregion.",
+            "heroImage": "url('https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://www.ratz-fatz-wohnungsaufloesungen.de/wp-content/uploads/2014/12/messiewohnung-vorher-nachher.jpg')",
+            "seoHeadline": "Professionelle Wohnungsauflösung in Nürnberg & Umgebung",
+            "seoText": "Ratz Fatz Wohnungsauflösungen® (Stralsunder Straße 52, 90425 Nürnberg, Tel. 0911/23 69 160) ist Ihr kompetenter und zuverlässiger Partner in Nürnberg, Fürth, Erlangen, Lauf, Forchheim und Herzogenaurach."
+        },
+        "muenchen": {
+            "businessName": "Ratz Fatz Wohnungsauflösungen München",
+            "heroHeadline": "Wohnungsauflösung in München",
+            "heroSubheadline": "Ihr lokaler Experte in München und dem gesamten Großraum. Persönliche Betreuung vor Ort.",
+            "heroImage": "url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Wohnungsauflösung in München & Umgebung",
+            "seoText": "Ratz Fatz Wohnungsauflösungen® in München (Tel. 0151/26543010) ist Ihr lokaler Partner für professionelle Haushaltsauflösungen, Wohnungsauflösungen und Entrümpelungen im gesamten Großraum München."
+        },
+        "berlin": {
+            "businessName": "Ratz Fatz Wohnungsauflösungen Berlin",
+            "heroHeadline": "Wohnungsauflösung in Berlin",
+            "heroSubheadline": "Ihr lokaler Experte in Berlin – schnell, diskret und bundesweit auf einheitlichem Qualitätsstandard.",
+            "heroImage": "url('https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=1920&q=80')",
+            "featureImage": "url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80')",
+            "seoHeadline": "Professionelle Wohnungsauflösung in Berlin & Umgebung",
+            "seoText": "Ratz Fatz Wohnungsauflösungen® in Berlin (Tel. 0151/23407249) ist Ihr vertrauenswürdiger lokaler Partner für Wohnungsauflösungen, Haushaltsauflösungen und Entrümpelungen in der Bundeshauptstadt."
+        }
+    }
+}

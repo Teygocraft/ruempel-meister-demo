@@ -1,6 +1,10 @@
 // siteconfig.js
-// This file acts as the configuration hub for the Anti-Gravity Cloning System.
-// The script dynamically replaces content in the index.html based on these values.
+// ============================================================
+// ANTI-GRAVITY WEBSITE CLONE SYSTEM — Konfigurations-Hub
+// ============================================================
+// Alle firmen-spezifischen Daten befinden sich NUR in dieser Datei.
+// Um eine neue Website zu klonen: Nur diese Datei anpassen, dann fertig.
+// Felder mit (*) sind PFLICHTFELDER für ein funktionierendes Klon.
 
 const locationData = {
     berlin: {
@@ -105,48 +109,106 @@ const locationData = {
 };
 
 const siteConfig = {
+
+    // ── MARKE & IDENTITÄT (*) ────────────────────────────────────
+    businessName: "Rümpel Meister",
     tagline: "Ihre Sorgen, unser Job - besenrein.",
-    primaryColor: "#2563eb", // Professional Blue
-    secondaryColor: "#eff6ff", // Light blue background
-    accentColor: "#f59e0b", // Warm accent for CTAs
-    phoneNumber: "0800 8080 90333",
+    logoUrl: "https://ruempelmeister.de/wordpress/wp-content/uploads/2020/12/ruempel-meister-logo.png",
+    logoAlt: "Rümpel Meister Logo",
+    faviconUrl: "https://ruempelmeister.de/wordpress/wp-content/uploads/2020/12/ruempel-meister-logo.png",
+
+    // ── FARBEN (*) ───────────────────────────────────────────────
+    primaryColor: "#2563eb",   // Haupt-Akzentfarbe (Buttons, Links)
+    secondaryColor: "#eff6ff",   // Heller Hintergrund
+    accentColor: "#f59e0b",   // Warm accent for CTAs
+
+    // ── KONTAKT (*) ──────────────────────────────────────────────
+    phoneNumber: "0800 8080 90333",       // Angezeigter Text
+    phoneNumberRaw: "0800808090333",          // Für tel: href (keine Leerzeichen/Sonderzeichen)
     emailAddress: "kontakt@ruempelmeister-berlin.de",
     address: "Musterstraße 12, 10115 Berlin",
+
+    // ── ÖFFNUNGSZEITEN ───────────────────────────────────────────
+    openingHoursMoFr: "Mo-Fr: 08:00 - 18:00 Uhr",
+    openingHoursSat: "Sa: 09:00 - 14:00 Uhr",
+    openingHoursSun: "So: Geschlossen",
+
+    // ── LANDING PAGE ─────────────────────────────────────────────
+    landingHeroImage: "url('https://ruempelmeister.de/wordpress/wp-content/uploads/2020/12/ruempel-meister-im-einsatz.jpg')",
+    landingTagline: "Bundesweite Experten",
+    landingHeadline: "Wir räumen auf.<br><span style='color: var(--primary);'>In Ihrer Stadt.</span>",
+    landingSubheadline: "Wählen Sie Ihren Standort für ein maßgeschneidertes, besenreines und stressfreies Festpreis-Angebot.",
+
+    // ── TRUST & BEWERTUNGEN ──────────────────────────────────────
     reviewsCount: "+200",
+
+    // ── ÜBER UNS ─────────────────────────────────────────────────
+    aboutHeadline: "Unsere Geschichte – Aus Erfahrung gegründet",
+    aboutText: "Rümpel Meister® wurde von Stefan Schinkel vor über zehn Jahren gegründet. Der Anstoß für die Gründung war die eigene Betroffenheit durch den Tod des Vaters und die Demenzerkrankung der Mutter. Als gelernter Sanitärinstallateur hat er am eigenen Leib erfahren, wie wichtig professionelle und einfühlsame Hilfe von Außenstehenden ist, wenn die Familie alleine nicht weiterkommt. Heute sind wir ein starkes, deutschlandweites Team, das mit Herz, Diskretion und höchsten Qualitätsstandards arbeitet.",
+
+    // ── LEISTUNGEN ───────────────────────────────────────────────
     services: [
         { title: "Wohnungsauflösung", description: "Komplette Räumung und besenreine Übergabe von Wohnungen und Häusern." },
         { title: "Keller & Dachboden", description: "Schnelle Entsorgung von Altlasten in Kellern, Garagen und Dachböden." },
         { title: "Gewerbliche Räumung", description: "Professionelle Büro- und Betriebsauflösungen für Unternehmen." }
     ],
+
+    // ── VORTEILE / FEATURES ──────────────────────────────────────
     features: [
         "Kostenlose Vorab-Besichtigung",
         "100% Festpreisgarantie",
         "Fachgerechte & zertifizierte Entsorgung",
         "Diskretes & schnelles Team"
-    ],
-    aboutHeadline: "Unsere Geschichte – Aus Erfahrung gegründet",
-    aboutText: "Rümpel Meister® wurde von Stefan Schinkel vor über zehn Jahren gegründet. Der Anstoß für die Gründung war die eigene Betroffenheit durch den Tod des Vaters und die Demenzerkrankung der Mutter. Als gelernter Sanitärinstallateur hat er am eigenen Leib erfahren, wie wichtig professionelle und einfühlsame Hilfe von Außenstehenden ist, wenn die Familie alleine nicht weiterkommt. Heute sind wir ein starkes, deutschlandweites Team, das mit Herz, Diskretion und höchsten Qualitätsstandards arbeitet."
+    ]
 };
 
 function applyConfig() {
-    // Inject Colors
+    // ── 1. CSS-Variablen (Farben) ────────────────────────────────
     document.documentElement.style.setProperty('--primary', siteConfig.primaryColor);
     document.documentElement.style.setProperty('--secondary', siteConfig.secondaryColor);
     document.documentElement.style.setProperty('--accent', siteConfig.accentColor);
 
-    // Inject Text Content
+    // ── 2. Logo ──────────────────────────────────────────────────
+    const logoImg = document.getElementById('site-logo');
+    if (logoImg) {
+        logoImg.src = siteConfig.logoUrl;
+        logoImg.alt = siteConfig.logoAlt || siteConfig.businessName;
+    }
+
+    // ── 3. Favicon ───────────────────────────────────────────────
+    const favicon = document.getElementById('site-favicon');
+    if (favicon) favicon.href = siteConfig.faviconUrl;
+
+    // ── 4. Telefon-Link (href) ───────────────────────────────────
+    const phoneHref = document.getElementById('nav-phone-href');
+    if (phoneHref) phoneHref.href = 'tel:' + siteConfig.phoneNumberRaw;
+
+    // ── 5. Landing Hero Hintergrundbild ──────────────────────────
+    const landingHero = document.getElementById('landing-hero-section');
+    if (landingHero) {
+        landingHero.style.background = `linear-gradient(rgba(248, 250, 252, 0.5), rgba(248, 250, 252, 0.8)), ${siteConfig.landingHeroImage} center/cover`;
+    }
+
+    // ── 6. Landing Page Texte ────────────────────────────────────
+    const landingTaglineEl = document.getElementById('landing-tagline');
+    if (landingTaglineEl) landingTaglineEl.textContent = siteConfig.landingTagline;
+    const landingHeadlineEl = document.getElementById('landing-headline');
+    if (landingHeadlineEl) landingHeadlineEl.innerHTML = siteConfig.landingHeadline;
+    const landingSubEl = document.getElementById('landing-subheadline');
+    if (landingSubEl) landingSubEl.textContent = siteConfig.landingSubheadline;
+
+    // ── 7. data-bind Felder (Text) ───────────────────────────────
     const dataBindings = document.querySelectorAll('[data-bind]');
     dataBindings.forEach(el => {
         const key = el.getAttribute('data-bind');
-        if (siteConfig[key]) {
+        if (siteConfig[key] !== undefined) {
             el.textContent = siteConfig[key];
         }
     });
 
-    // Populate Services
+    // ── 8. Leistungen (Services) ──────────────────────────────────
     const grid = document.getElementById('services-grid');
     if (grid && siteConfig.services) {
-        // Unique SVG icons per service type
         const serviceIcons = {
             'Wohnungsauflösung': `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
             'Keller & Dachboden': `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 2v5"/><path d="M8 2v5"/><path d="M2 12h20"/><path d="M7 17h.01"/><path d="M17 17h.01"/></svg>`,
@@ -169,7 +231,7 @@ function applyConfig() {
         });
     }
 
-    // Populate Features
+    // ── 9. Vorteile / Features ────────────────────────────────────
     const featureList = document.getElementById('feature-list');
     if (featureList && siteConfig.features) {
         siteConfig.features.forEach(feature => {
@@ -188,10 +250,10 @@ function applyConfig() {
 function changeLocation(cityKey) {
     const data = locationData[cityKey] || { ...locationData.default, businessName: "Rümpel Meister " + cityKey.charAt(0).toUpperCase() + cityKey.slice(1) };
 
-    // Assign dynamic text
-    siteConfig.businessName = data.businessName;
-    siteConfig.heroHeadline = data.heroHeadline || locationData.default.heroHeadline + " in " + cityKey.charAt(0).toUpperCase() + cityKey.slice(1);
-    siteConfig.heroSubheadline = data.heroSubheadline || locationData.default.heroSubheadline;
+    // Firmen-spezifische Felder in siteConfig schreiben damit data-bind sie korrekt aufnimmt
+    siteConfig.businessName = data.businessName || siteConfig.businessName;
+    siteConfig.heroHeadline = data.heroHeadline || siteConfig.heroHeadline;
+    siteConfig.heroSubheadline = data.heroSubheadline || siteConfig.heroSubheadline;
     const heroImage = data.heroImage || locationData.default.heroImage;
     const seoHeadline = data.seoHeadline || locationData.default.seoHeadline;
     const seoText = data.seoText || locationData.default.seoText;

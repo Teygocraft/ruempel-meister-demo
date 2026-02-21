@@ -1,0 +1,57 @@
+{
+    "_comment": "Vorlage für einen neuen Website-Klon. Alle Felder mit (*) sind Pflichtfelder.",
+    "businessName": "*  Vollständiger Firmenname, z.B. 'Blitzschnell Entrümpelung GmbH'",
+    "tagline": "*  Kurzer Slogan, z.B. 'Ihre Sorgen, unser Job.'",
+    "logoUrl": "*  Direkte URL zum Firmen-Logo (PNG/SVG empfohlen)",
+    "logoAlt": "   Alternativtext für das Logo (Standard: businessName)",
+    "faviconUrl": "*  URL zum Browser-Tab-Icon (oft identisch mit logoUrl)",
+    "primaryColor": "*  Haupt-Akzentfarbe als HEX, z.B. '#e53e3e' (Rot) oder '#2563eb' (Blau)",
+    "secondaryColor": "   Heller Hintergrund, z.B. '#fff5f5'. Standard: '#eff6ff'",
+    "accentColor": "   Akzent für CTAs. Standard: '#f59e0b'",
+    "phoneNumber": "*  Lesbare Telefonnummer, z.B. '030 123 456 78'",
+    "phoneNumberRaw": "*  Nur Ziffern für tel: Link, z.B. '03012345678' oder '+4930123456'",
+    "emailAddress": "*  Kontakt-E-Mail, z.B. 'info@firma.de'",
+    "address": "*  Vollständige Adresse, z.B. 'Hauptstraße 1, 10115 Berlin'",
+    "openingHoursMoFr": "   Standard: 'Mo-Fr: 08:00 - 18:00 Uhr'",
+    "openingHoursSat": "   Standard: 'Sa: 09:00 - 14:00 Uhr'",
+    "openingHoursSun": "   Standard: 'So: Geschlossen'",
+    "landingHeroImage": "*  CSS url() Format: \"url('https://...')\" — Hintergrundbild der Startseite",
+    "landingTagline": "   Kleine Überschrift auf der Startseite. Standard: 'Bundesweite Experten'",
+    "landingHeadline": "   Große H1 auf der Startseite. HTML erlaubt. Standard: 'Wir räumen auf.<br>...'",
+    "landingSubheadline": "   Untertext auf der Startseite.",
+    "reviewsCount": "   Anzahl der Bewertungen, z.B. '+150'. Standard: '+200'",
+    "aboutHeadline": "*  Überschrift der 'Über uns'-Sektion",
+    "aboutText": "*  Text der 'Über uns'-Sektion (2-4 Sätze empfohlen)",
+    "services": [
+        {
+            "title": "* Leistungsname, z.B. 'Wohnungsauflösung'",
+            "description": "* Kurze Beschreibung der Leistung (1-2 Sätze)"
+        },
+        {
+            "title": "* Zweite Leistung",
+            "description": "* Beschreibung"
+        },
+        {
+            "title": "* Dritte Leistung (optional)",
+            "description": "* Beschreibung"
+        }
+    ],
+    "features": [
+        "* Vorteil 1, z.B. 'Kostenlose Besichtigung'",
+        "* Vorteil 2, z.B. '100% Festpreisgarantie'",
+        "* Vorteil 3",
+        "* Vorteil 4 (optional)"
+    ],
+    "locationData": {
+        "_comment": "Optional: Städte-spezifische Inhalte für die Landing-Page. Schlüssel = Stadt-ID (z.B. 'berlin').",
+        "beispielstadt": {
+            "businessName": "Firmenname Beispielstadt",
+            "heroHeadline": "Schnelle Entrümpelung in Beispielstadt",
+            "heroSubheadline": "Ihr lokales Team in Beispielstadt und Umgebung.",
+            "heroImage": "url('https://unsplash.com/...')",
+            "featureImage": "url('https://unsplash.com/...')",
+            "seoHeadline": "Professionelle Entrümpelung für Beispielstadt",
+            "seoText": "Lokaler SEO-Text für Beispielstadt..."
+        }
+    }
+}
