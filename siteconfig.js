@@ -317,8 +317,8 @@ function populateCityGrid() {
         card.onclick = () => showCityView(cityKey);
 
         card.style.background = `linear-gradient(to top, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.2)), ${data.heroImage}`;
-        card.style.backgroundSize = 'cover';
-        card.style.backgroundPosition = 'center';
+        card.style.setProperty('background-size', 'cover', 'important');
+        card.style.setProperty('background-position', 'center', 'important');
 
         const displayName = cityNames[cityKey] || (cityKey.charAt(0).toUpperCase() + cityKey.slice(1));
 

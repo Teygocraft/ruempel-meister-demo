@@ -253,8 +253,8 @@ function populateCityGrid() {
         card.className = 'city-card';
         card.onclick = () => showCityView(cityKey);
         card.style.background = \`linear-gradient(to top, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.2)), \${data.heroImage}\`;
-        card.style.backgroundSize = 'cover';
-        card.style.backgroundPosition = 'center';
+        card.style.setProperty('background-size', 'cover', 'important');
+        card.style.setProperty('background-position', 'center', 'important');
         const displayName = cityKey.charAt(0).toUpperCase() + cityKey.slice(1);
         card.innerHTML = \`<h3>\${displayName}</h3><span class="city-card-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>\`;
         grid.appendChild(card);
